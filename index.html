@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaperista</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <script></script>
+  </head>
+  <body class="font-marck text-dark">
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center p-4 shadow-md bg-primary text-white"
+    >
+      <div class="text-lg font-bold">Kaperista</div>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#about" class="hover:text-secondary">About Us</a>
+        <a href="#testimonials" class="hover:text-secondary">Testimonials</a>
+        <a href="#location" class="hover:text-secondary">Location</a>
+        <a href="#newsletter" class="hover:text-secondary">Newsletter</a>
+      </nav>
+      <!-- Burger Menu -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden flex-col bg-primary text-white px-4 py-2"
+    >
+      <a href="#" class="block py-1 hover:text-secondary">Menu</a>
+      <a href="#" class="block py-1 hover:text-secondary">Catering</a>
+      <a href="#" class="block py-1 hover:text-secondary">Our Story</a>
+      <a href="#" class="block py-1 hover:text-secondary">Locations</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-cover bg-center h-[400px] md:h-[500px] flex items-center justify-center text-white text-center px-4"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348');
+      "
+    >
+      <div>
+        <h1 class="text-3xl md:text-5xl font-bold">
+          Brewed with Passion, Served with Love
+        </h1>
+        <button
+          class="mt-4 px-4 py-2 bg-primary hover:bg-secondary rounded text-white font-semibold"
+        >
+          Visit Us
+        </button>
+      </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section class="max-w-6xl mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold mb-4 text-primary">Menu Highlights</h2>
+      <div id="menu-scroll" class="relative">
+        <!-- Faded left & right indicator -->
+        <div
+          class="pointer-events-none absolute top-0 bottom-0 left-0 w-10 bg-gradient-to-r from-white to-transparent z-10"
+        ></div>
+        <div
+          class="pointer-events-none absolute top-0 bottom-0 right-0 w-10 bg-gradient-to-l from-white to-transparent z-10"
+        ></div>
+
+        <div
+          class="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth"
+        >
+          <div class="text-center min-w-[300px]">
+            <img
+              src="./img/cup-coffee-with-drawn-heart.jpg"
+              class="rounded-lg w-full h-60 object-cover"
+            />
+            <p class="text-bold text-2xl text-primary">Latte</p>
+          </div>
+          <div class="text-center min-w-[300px]">
+            <img
+              src="./img/kitera-dent-P1QAEVLRldE-unsplash.jpg"
+              class="rounded-lg w-full h-60 object-cover"
+            />
+            <p class="text-bold text-2xl text-primary">Cappuccino</p>
+          </div>
+          <div class="text-center min-w-[300px]">
+            <img
+              src="./img/pariwat-pannium-1PCPzACezMA-unsplash.jpg"
+              class="rounded-lg w-full h-60 object-cover"
+            />
+            <p class="text-bold text-2xl text-primary">Cold Brew</p>
+          </div>
+          <div class="text-center min-w-[300px]">
+            <img
+              src="./img/delicious-coffee-cup-isolated.png"
+              class="rounded-lg w-full h-60 object-cover"
+            />
+            <p class="text-bold text-2xl text-primary">Espresso</p>
+          </div>
+          <div class="text-center min-w-[300px]">
+            <img
+              src="./img/fallon-michael-b14IWOcm_lA-unsplash.jpg"
+              class="rounded-lg w-full h-60 object-cover"
+            />
+            <p class="text-bold text-2xl text-primary">Mocha</p>
+          </div>
+          <div class="text-center min-w-[300px]">
+            <img
+              src="./img/affogato-coffee-background_480x480.webp"
+              class="rounded-lg w-full h-60 object-cover"
+            />
+            <p class="text-bold text-2xl text-primary">Affogato</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="max-w-4xl mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold mb-2 text-primary" id="about">About Us</h2>
+      <p class="text-xl">
+        Kaperista is a coffee shop located in the heart of the city. We are
+        committed to serving the best quality coffee and food in a cozy and
+        welcoming environment. Our goal is to provide our customers with an
+        exceptional experience every time they visit us. We believe that great
+        coffee starts with great beans, so we source our beans from the best
+        coffee farms around the world. We also offer a variety of delicious
+        pastries, sandwiches, and salads that are made fresh daily. Whether
+        you're looking for a quick pick-me-up or a relaxing place to hang out,
+        Kaperista has got you covered.
+      </p>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="max-w-4xl mx-auto px-4 py-10 overflow-hidden">
+      <h2 class="text-3xl font-bold mb-4 text-primary" id="testimonials">
+        Customer Testimonials
+      </h2>
+      <div
+        id="testimonials-scroll"
+        class="relative max-h-[400px] overflow-y-auto scrollbar-hide scroll-smooth"
+      >
+        <!-- Faded top & bottom indicator -->
+        <div
+          class="pointer-events-none absolute top-[-15px] left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent z-10"
+        ></div>
+        <div
+          class="pointer-events-none absolute bottom-[-15px] left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent z-10"
+        ></div>
+
+        <div class="space-y-6 px-2 pb-10">
+          <!-- Testimonials here -->
+          <div class="animate-fade-in-down">
+            <p class="font-semibold">
+              Jen <span class="text-sm text-gray-500">Jan 2022</span>
+            </p>
+            <p class="text-secondary">★★★★★</p>
+            <p>
+              The best coffee in town! From the moment I stepped inside, the
+              aroma was inviting, the baristas greeted me warmly, and every sip
+              of my cappuccino was smooth, rich, and absolutely unforgettable.
+            </p>
+          </div>
+
+          <div class="animate-fade-in-down">
+            <p class="font-semibold">
+              Marco <span class="text-sm text-gray-500">Mar 2023</span>
+            </p>
+            <p class="text-secondary">★★★★★</p>
+            <p>
+              I’ve been coming here regularly for over a year now, and the
+              consistent quality of the coffee, combined with the relaxing
+              ambiance and genuinely friendly service, keeps me coming back
+              every single time.
+            </p>
+          </div>
+
+          <div class="animate-fade-in-down">
+            <p class="font-semibold">
+              Alyssa <span class="text-sm text-gray-500">Dec 2023</span>
+            </p>
+            <p class="text-secondary">★★★★★</p>
+            <p>
+              Every time I try one of their seasonal drinks, I’m blown away by
+              the creativity and attention to detail—it’s clear that the team
+              puts a lot of thought into making every cup a memorable
+              experience.
+            </p>
+          </div>
+
+          <div class="animate-fade-in-down">
+            <p class="font-semibold">
+              Daniel <span class="text-sm text-gray-500">Aug 2022</span>
+            </p>
+            <p class="text-secondary">★★★★★</p>
+            <p>
+              Whether I’m grabbing a quick cold brew on my way to work or
+              settling in with my laptop for a few hours, this café delivers the
+              perfect blend of efficiency, comfort, and truly excellent coffee.
+            </p>
+          </div>
+
+          <div class="animate-fade-in-down">
+            <p class="font-semibold">
+              Kristine <span class="text-sm text-gray-500">May 2024</span>
+            </p>
+            <p class="text-secondary">★★★★★</p>
+            <p>
+              This place has become part of my daily routine because not only do
+              they serve some of the most flavorful lattes I’ve ever had, but
+              the cozy setting also helps me relax and recharge before a busy
+              day.
+            </p>
+          </div>
+
+          <div class="animate-fade-in-down">
+            <p class="font-semibold">
+              Leo <span class="text-sm text-gray-500">Feb 2023</span>
+            </p>
+            <p class="text-secondary">★★★★★</p>
+            <p>
+              From their perfectly flaky croissants to their expertly pulled
+              espresso shots, every detail here shows a true passion for quality
+              and customer satisfaction, making it hands down my favorite coffee
+              spot in the city.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Hours -->
+    <section class="max-w-4xl mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold mb-4 text-primary" id="location">
+        Location & Hours
+      </h2>
+      <div class="mb-4">
+        <iframe
+          class="w-full h-64 rounded-lg"
+          src="https://www.google.com/maps?q=Puregold+Baliuag&hl=en-US&output=embed"
+        ></iframe>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between">
+        <div>
+          <p class="text-xl text-primary font-bold">📍 Puregold Baliuag</p>
+          <p class="text-sm text-gray-600">
+            Benigno S. Aquino Ave, Baliwag, Bulacan, Philippines
+          </p>
+        </div>
+        <div class="text-xl text-primary font-bold">10:00 AM – 10:00 PM</div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="max-w-2xl mx-auto px-4 py-10">
+      <h2 class="text-3xl font-bold mb-4 text-primary" id="newsletter">
+        Newsletter Signup
+      </h2>
+      <form class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block mb-1">First Name</label>
+          <input
+            type="text"
+            class="w-full border border-gray-300 rounded px-3 py-2"
+            placeholder="Jane"
+          />
+        </div>
+        <div>
+          <label class="block mb-1">Email</label>
+          <input
+            type="email"
+            class="w-full border border-gray-300 rounded px-3 py-2 active:text-green"
+            placeholder="jane@gmail.com"
+          />
+        </div>
+        <div class="sm:col-span-2">
+          <button
+            class="w-full bg-primary hover:bg-secondary text-white py-2 px-4 rounded"
+          >
+            Subscribe
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p>&copy; 2025 Kaperista. All rights reserved.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
